@@ -28,6 +28,7 @@ h5 {
   .dropdown .dropbtn {
 	font-family: "Courier New", monospace;
 	font-size: 20px;
+	height: 85px;
 	border: none;
 	outline: none;
 	padding: 30px 30px;
@@ -49,6 +50,7 @@ h5 {
   color: black;
 	line-height: 80px;
   text-align: center;
+  height: 85px;
   padding-left: 20px;
 	padding-right: 20px; 
   text-decoration: none;
@@ -64,7 +66,9 @@ h5 {
 /* Dropdown content (hidden by default) */
 .dropdown-content {
 	display: none;
+	float: right;
 	position: absolute;
+	height: 300px;
 	background-color: #d5d5d5;
 	min-width: 160px;
 	z-index: 1;
@@ -74,10 +78,14 @@ h5 {
   .dropdown-content a {
 	float: none;
 	color: black;
-	  line-height: 60px;
+	  line-height: 50px;
 	text-align: center;
-	padding-left: 25px;
-	  padding-right: 25px; 
+	height: 50px;
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	  padding-right: 20px; 
 	text-decoration: none;
 	font-size: 20px;
 	  transition: background-color 0.5s;
