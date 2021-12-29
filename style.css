@@ -18,11 +18,27 @@ h5 {
 	margin: 25px;
 }
 
+/* The dropdown container */
+.dropdown {
+	float: right;
+	overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+	font-family: "Courier New", monospace;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	padding: 30px 30px;
+	background-color: inherit;
+  }
+
 /*menu bar*/
 .topnav {
   overflow: hidden;
-  background-color: #d5d5d5);
-	height: 80px;
+  background-color: #d5d5d5;
+	height: 85px;
 	line-height: 80px;
 	width: 100%;
 	background: #d5d5d5;
@@ -30,7 +46,6 @@ h5 {
 
 .topnav a {
   float: right;
-	display: inline-block;
   color: black;
 	line-height: 80px;
   text-align: center;
@@ -41,11 +56,42 @@ h5 {
 	transition: background-color 0.5s;
 }
 
-.topnav a:hover {
+.topnav a:hover, .dropdown:hover .dropbtn {
   background-color: #818181;
   color: black;
 }
 
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #d5d5d5;
+	min-width: 160px;
+	z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	float: none;
+	color: black;
+	  line-height: 60px;
+	text-align: center;
+	padding-left: 25px;
+	  padding-right: 25px; 
+	text-decoration: none;
+	font-size: 20px;
+	  transition: background-color 0.5s;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+	background-color: #818181;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
 .topnav a.active {
   background-color: black;
   color: white;
