@@ -34,7 +34,7 @@ h5 {
 	padding: 30px 30px;
 	background-color: inherit;
   }
-
+/*Active tab for a dropdown*/
   .dropdown .dropbtnactive {
 	font-family: "Courier New", monospace;
 	font-size: 20px;
