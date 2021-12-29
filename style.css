@@ -35,6 +35,17 @@ h5 {
 	background-color: inherit;
   }
 
+  .dropdown .dropbtnactive {
+	font-family: "Courier New", monospace;
+	font-size: 20px;
+	height: 85px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 30px 30px;
+	background-color: black;
+  }
+
 /*menu bar*/
 .topnav {
   overflow: hidden;
@@ -104,6 +115,10 @@ h5 {
   background-color: black;
   color: white;
 }
+.d a.active {
+	background-color: black;
+	color: white;
+  }
 .topnav .icon {
   display: none;
 }
