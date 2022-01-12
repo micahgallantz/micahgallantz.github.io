@@ -1,0 +1,14 @@
+body{
+	font-family: arial;
+	background-color: #2F3240;
+	color: #B2B2B2;
+	text-align: center;
+	
+}
+.catButton{
+  margin:auto;
+  width: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  height: 400px;
+}
