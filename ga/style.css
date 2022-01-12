@@ -1,0 +1,146 @@
+/*Margins*/
+h1 {
+	margin: 25px;
+}
+p {
+	margin: 25px;
+}
+h2 {
+	margin: 25px;
+}
+h3 {
+	margin: 25px;
+}
+h4 {
+	margin: 25px;
+}
+h5 {
+	margin: 25px;
+}
+
+/* The dropdown container */
+.dropdown {
+	float: right;
+	overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+	font-family: "Courier New", monospace;
+	font-size: 20px;
+	height: 85px;
+	border: none;
+	outline: none;
+	padding: 30px 30px;
+	background-color: inherit;
+  }
+/*Active tab for a dropdown*/
+  .dropdown .dropbtnactive {
+	font-family: "Courier New", monospace;
+	font-size: 20px;
+	height: 85px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 30px 30px;
+	background-color: black;
+  }
+
+/*menu bar*/
+.topnav {
+  overflow: hidden;
+  background-color: #d5d5d5;
+	height: 85px;
+	line-height: 80px;
+	width: 100%;
+	background: #d5d5d5;
+}
+
+.topnav a {
+  float: right;
+  color: black;
+	line-height: 80px;
+  text-align: center;
+  height: 85px;
+  padding-left: 20px;
+	padding-right: 20px; 
+  text-decoration: none;
+  font-size: 20px;
+	transition: background-color 0.5s;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #818181;
+  color: black;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+	display: none;
+	float: right;
+	position: absolute;
+	height: 300px;
+	background-color: #d5d5d5;
+	min-width: 160px;
+	z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	float: none;
+	color: black;
+	  line-height: 50px;
+	text-align: center;
+	height: 50px;
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	  padding-right: 20px; 
+	text-decoration: none;
+	font-size: 20px;
+	  transition: background-color 0.5s;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+	background-color: #818181;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+.d a.active {
+	background-color: black;
+	color: white;
+  }
+.topnav .icon {
+  display: none;
+}
+
+/*animations*/
+@keyframes bodyAnim{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+/*misc styling*/
+body{
+	margin: 0px;
+	background: #eeeeee;
+  font-family: "Courier New", monospace;
+	animation: bodyAnim 1s ease 0s 1;
+}
+#title{
+	display: inline;
+	margin: 25px;
+}
