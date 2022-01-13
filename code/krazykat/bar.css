@@ -1,0 +1,25 @@
+.bottomBar{
+    background: rgb(70, 70, 70);
+    height:auto;
+    width: 100%;
+    margin-top:0px;
+    position:absolute;
+    bottom:0;
+  }
+  .openWindowBtn{
+    margin-bottom:10px;
+    margin-top:10px;
+    width: 20%;
+    display: inline-block;
+    background: rgb(104, 104, 104);
+    color:#fff;
+    border: none;
+    padding-top:5px; 
+    padding-bottom:5px; 
+    margin-left:2.5%;
+    margin-right:2.5%;
+    transition: background 0.5s;
+  }
+  .openWindowBtn:hover{
+    background: rgb(129, 129, 129);
+  }

@@ -1,14 +1,36 @@
 body{
-	font-family: arial;
-	background-color: #2F3240;
-	color: #B2B2B2;
+	margin: 0px;
+  padding:none;
+	color: white;
+  background: rgb(46, 46, 46);
 	text-align: center;
-	
+}
+
+h1{
+	color: white;
+}
+.title{
+  text-align: center;
+  margin: 0px;
+  width:100vw;
+	padding-bottom: 10px;
+	padding-top: 10px;
+  background: rgb(0, 0, 39);
+  font-size: 20px;
 }
 .catButton{
-  margin:auto;
-  width: 400px;
+  height: 50vh;
+  width: 50vh;
+  margin: auto;
   border-radius: 50%;
   object-fit: cover;
-  height: 400px;
+	color: #fff;
+	background: rgb(59, 59, 59);
+  filter: drop-shadow(0px 0px 5px #fff);
+  transition: transform 0.3s, filter 0.3s;
+}
+.catButton:hover{
+	background: rgb(102, 102, 102);
+  transform: scale(1.06);
+filter: drop-shadow(0px 0px 10px #fff);
 }

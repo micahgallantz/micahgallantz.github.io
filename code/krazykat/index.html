@@ -1,36 +1,49 @@
+<!--GO TO SCRIPT.JS AND READ MY COMMENT-->
+
+
+
 <!DOCTYPE html>
 <html>
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Cat Clicker</title>
+	<title>krazy kat Simulator</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="bar.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-	<h1>Krazy Kat Klikker!!</h1>
-	<script src="script.js">
+	<h1 class="title">Krazy Kat Simulator!!</h1>
+	<div id="clrbtn"><button onclick="if(confirm('Are you sure?')){clearSave()}">Clear Save</button></div>
+
+<!--GO TO SCRIPT.JS AND READ MY COMMENT-->
 
 	</script>
 
+	<!--score stuff-->
 	<h1>
-		<div id="zero">
-			0</div>
+		<div id="catsVal">0</div>
 	</h1>
 
-	<h1>
-		<div id="counter">
-		</div>
-	</h1>
-	<br>
-	<br>
+	<!--cat button-->
+<!--GO TO SCRIPT.JS AND READ MY COMMENT-->
 
-	<img class="catButton" src="cat.jpg" onclick="scoreUp()">
+	<img class="catButton" src="cat2.png" onclick="scoreUp()">
 
+	<!--Bottom option bar:-->
+  <div class="bottomBar" id="bottomBar">
+  
+  </div>
 
-</button>
+<!--GO TO SCRIPT.JS AND READ MY COMMENT-->
 
+	<!--Saving and loading-->
+
+	<script src="mem.js"></script>
+	<script src="script.js"></script>
+	<script src="upgrades.js"></script>
+<!--GO TO SCRIPT.JS AND READ MY COMMENT-->
 
 
   </body>
