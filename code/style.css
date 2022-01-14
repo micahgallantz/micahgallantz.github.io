@@ -17,6 +17,13 @@ h4 {
 h5 {
 	margin: 25px;
 }
+.black {
+	background-color: black;
+	color: white;
+}
+.white {
+	
+}
 
 /* The dropdown container */
 .dropdown {
