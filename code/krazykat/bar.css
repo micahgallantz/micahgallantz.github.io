@@ -1,25 +1,51 @@
-.bottomBar{
-    background: rgb(70, 70, 70);
-    height:auto;
-    width: 100%;
-    margin-top:0px;
-    position:absolute;
-    bottom:0;
-  }
-  .openWindowBtn{
-    margin-bottom:10px;
-    margin-top:10px;
-    width: 20%;
-    display: inline-block;
-    background: rgb(104, 104, 104);
-    color:#fff;
-    border: none;
-    padding-top:5px; 
-    padding-bottom:5px; 
-    margin-left:2.5%;
-    margin-right:2.5%;
-    transition: background 0.5s;
-  }
-  .openWindowBtn:hover{
-    background: rgb(129, 129, 129);
-  }
+.leftBar{
+  background: rgb(70, 70, 70);
+  height: 100%;
+  width: 20%;
+  position:absolute;
+  z-index: 10;
+  top:0px;
+  left:0px;
+  line-height: 40px;
+  border-right: 4px solid red;
+  background-image: url("blueBg.jpeg"); 
+}
+.rightBar{
+  background: rgb(70, 70, 70);
+  height: 100%;
+  width: 20%;
+  position:absolute;
+  z-index: 10;
+  top:0px;
+  right:0px;
+  line-height: 40px;
+  border-left: 4px solid red;
+  background-image: url("blueBg.jpeg"); 
+  filter: 
+}
+
+.openWindowBtn{
+  background: rgb(104, 104, 104);
+  border: none;
+  padding:5px;
+  width: 100%;
+  transition: background 0.5s;
+}
+.openWindowBtn:hover{
+  background: rgb(129, 129, 129);
+}
+.window{
+  position: absolute;
+  padding-top:5px; 
+  padding-bottom:5px; 
+  width: 0px;
+  top:0px;
+  left:0px;
+  height: 100%;
+  background: red;
+  color:#fff;
+  transition: width 0.5s;
+}
+.expanded{
+  width: 100%;
+}

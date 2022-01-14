@@ -3,8 +3,10 @@
 Game = {
 	Cats: 0,
 	Gain: 1,
-  LeaveTime:11,
-  PassiveGain:0,
-	AwayGain:1
+	//gains PER MILLISECOND
+	PassiveGain: 10,
+	AwayGain: 0.00001,
+	
+	LeaveTime: Date.now(),
+	AwayTime: 0,
 };
-//GO TO SCRIPT.JS AND READ MY COMMENT
