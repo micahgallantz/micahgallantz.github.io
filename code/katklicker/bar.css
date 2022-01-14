@@ -1,0 +1,67 @@
+.leftBar{
+  background: rgb(70, 70, 70);
+  height: 100%;
+  width: 20%;
+  position:absolute;
+  z-index: 10;
+  top:0px;
+  left:0px;
+  line-height: 40px;
+  border-right: 4px solid white;
+  background-image: url("tex/planks.jpg"); 
+  background-size: 100% auto; 
+  background-position: bottom 300px right 200px;
+  box-shadow: 10px 0px 100px #000;
+}
+.rightBar{
+  background: rgb(70, 70, 70);
+  height: 100%;
+  width: 20%;
+  position:absolute;
+  z-index: 10;
+  top:0px;
+  right:0px;
+  line-height: 40px;
+  border-left: 4px solid white;
+  background-size: 100% auto; 
+  background-image: url("tex/planks.jpg"); 
+  box-shadow: -10px 0px 100px #000;
+}
+
+.openWindowBtn{
+  background: rgb(104, 104, 104);
+  border: none;
+  padding:5px;
+  width: 100%;
+  transition: background 0.5s;
+}
+.openWindowBtn:hover{
+  background: rgb(129, 129, 129);
+}
+.window{
+  position: absolute;
+  top:50%;
+  transform: translate(calc(-100% - 4px),-50%);
+  padding-top:5px; 
+  padding-bottom:5px; 
+  width: 90%;
+  border: 4px solid white;
+  border-left: none;
+  height: 90%;
+  background: red;
+  background-image: url("tex/bgBlue.jpg");
+  background-size: 100% auto;
+  color:#fff;
+  transition: transform 0.5s ease;
+}
+.expanded{
+  transform: translate(0,-50%);
+  z-index: 20;
+}
+.windowTitle{
+  font-size: 20px;
+  width: 100%;
+  height: 20px;
+  line-height: 8%;
+  background: red;
+}

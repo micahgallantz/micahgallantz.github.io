@@ -3,9 +3,11 @@ class upgradeWindow {
 		this.name = name;
 		this.upgrades = upgrades;
 
-
 		this.div = document.createElement('div');
 		this.div.className = "window";
+    this.div.innerHTML += `
+      <h1 class='windowTitle'>${name}</h1>
+    `
 		document.getElementById('leftBar').appendChild(this.div)
 
 		this.openButton = document.createElement('button');
@@ -17,6 +19,10 @@ class upgradeWindow {
       if(this.div.classList.contains('expanded')){
         this.div.classList.remove("expanded");
       }else{
+        var els = document.getElementsByClassName('window')
+        for(var i=0;i<els.length;i++){
+          els[i].classList.remove("expanded")
+        }
         this.div.classList.add("expanded")
       }
 		}
