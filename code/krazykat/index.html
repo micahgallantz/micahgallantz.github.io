@@ -12,7 +12,7 @@
 
 <body>
 	<h1 class="title">Krazy Kat Simulator!!</h1>
-	<div class="stg">
+	<div id="settings" class="settings">
 		<h2>Settings</h2>
 	</div>
 	<!--score stuff-->
@@ -40,6 +40,6 @@
 	<!--Clear save Button-->
 <img class="clrbtn" src="tex/clearSave.png" onclick="if(confirm('THIS WILL CLEAR YOUR SAVE! Are you sure you want to do this?')) {clearSave()}" alt="Clear Save"></img>
 
-<img class="stgbtn" src="tex/settings.png" onclick=""></img>
+<img class="stgbtn" id="stgbtn" src="tex/settings.png" onclick="stgchange();">
   </body>
 </html>

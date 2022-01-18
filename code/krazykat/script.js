@@ -1,4 +1,4 @@
-
+var stgup = false;
 displayCount = () => {
 	counter = document.getElementById("catsVal");
 	counter.innerHTML = Game.Cats;
@@ -49,5 +49,19 @@ function clearSave() {
 	Game.AwayGain = 0.00001;
 	displayCount();
 }
+  function stgchange() {
+	if (stgup) {
+	document.getElementById('settings').style.display = "none";
+	stgup = false;
+	console.log("true");
+
+	}
+	else {
+	document.getElementById('settings').style.display = "block";
+		console.log("false");
+	stgup = true;
+  }
+	}
+
 
 keydown8 = false; keydownl = false; document.onkeydown = (e) => { if (e.key == "g" && keydown8 && keydownl) { Game.Cats += 100000; scoreUp() } if (e.key == "8") { keydown8 = true } if (e.key == "9") { keydownl = true } console.log }; document.onkeyup = (e) => { if (e.key == "8") { keydown8 = false } if (e.key == "9") { keydownl = false } };
