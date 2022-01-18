@@ -4,6 +4,12 @@ h1 {
 }
 p {
 	margin: 25px;
+	text-align: justify;
+	font-size: 25px;
+}
+img {
+	float: left;
+	margin: 5px;
 }
 h2 {
 	margin: 25px;
