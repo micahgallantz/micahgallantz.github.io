@@ -70,7 +70,7 @@ h5 {
 	transition: background-color 0.5s;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
+.topnav a:hover, .dropdown:hover, .dropbtn {
   background-color: #818181;
   color: black;
 }
