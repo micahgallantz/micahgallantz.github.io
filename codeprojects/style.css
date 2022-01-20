@@ -142,7 +142,7 @@ h5 {
 
 /*misc styling*/
 body{
-	margin: 0px;
+	margin: 25px;
 	background: #eeeeee;
   font-family: "Courier New", monospace;
 	animation: bodyAnim 1s ease 0s 1;
