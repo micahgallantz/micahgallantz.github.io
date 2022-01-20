@@ -27,13 +27,6 @@ img {
 body {
 	margin: 0px;
 }
-.black {
-	background-color: black;
-	color: white;
-}
-.white {
-	
-}
 /* The dropdown container */
 .dropdown {
 	float: right;
@@ -68,7 +61,7 @@ body {
   background-color: #d5d5d5;
 	height: 85px;
 	line-height: 80px;
-	top: 0px;
+	top: 0;
 	width: 100%;
 	background: #d5d5d5;
 }
