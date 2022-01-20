@@ -52,9 +52,9 @@ h5 {
   overflow: hidden;
   background-color: #d5d5d5;
 	height: 85px;
-	top: 0;
-	left: 0;
-	right: 0;
+	top: 0px;
+	left: 0px;
+	right: 0px;
 	line-height: 80px;
 	width: 100%;
 	background: #d5d5d5;
