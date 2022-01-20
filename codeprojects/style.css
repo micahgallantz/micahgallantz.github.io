@@ -3,6 +3,7 @@ h1 {
 	margin: 25px;
 }
 p {
+	margin: 25px;
 }
 h2 {
 	margin: 25px;
@@ -16,13 +17,7 @@ h4 {
 h5 {
 	margin: 25px;
 }
-.black {
-	background-color: black;
-	color: white;
-}
-.white {
-	margin: 25px;
-}
+
 
 /* The dropdown container */
 .dropdown {
