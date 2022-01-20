@@ -142,6 +142,7 @@ body{
 	background: #eeeeee;
   font-family: "Courier New", monospace;
 	animation: bodyAnim 1s ease 0s 1;
+	margin: 0px;
 }
 #title{
 	display: inline;
