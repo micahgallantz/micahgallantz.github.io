@@ -24,8 +24,12 @@ img {
 	margin: 5px;
 	height: 100%;
 }
-body {
-	margin: 0px;
+.black {
+	background-color: black;
+	color: white;
+}
+.white {
+	
 }
 /* The dropdown container */
 .dropdown {
@@ -61,7 +65,6 @@ body {
   background-color: #d5d5d5;
 	height: 85px;
 	line-height: 80px;
-	top: 0;
 	width: 100%;
 	background: #d5d5d5;
 }
@@ -99,14 +102,14 @@ body {
   .dropdown-content a {
 	float: none;
 	color: black;
-	line-height: 50px;
+	  line-height: 50px;
 	text-align: center;
 	height: 50px;
 	display: block;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 20px;
-	padding-right: 20px; 
+	  padding-right: 20px; 
 	text-decoration: none;
 	font-size: 20px;
 	  transition: background-color 0.5s;
@@ -152,4 +155,5 @@ body{
 }
 #title{
 	display: inline;
+	margin: 25px;
 }
