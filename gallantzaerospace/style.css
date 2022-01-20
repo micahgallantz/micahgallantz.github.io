@@ -5,6 +5,7 @@ h1 {
 p {
 	margin: 25px;
 	text-align: justify;
+	font-size: 25px;
 }
 h2 {
 	margin: 25px;
@@ -21,7 +22,7 @@ h5 {
 img {
 	float: left;
 	margin: 5px;
-=}
+}
 /* The dropdown container */
 .dropdown {
 	float: right;
