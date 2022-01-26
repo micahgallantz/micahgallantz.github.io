@@ -23,6 +23,9 @@ img {
 	float: left;
 	margin: 5px;
 }
+.me {
+	display: none;
+}
 
 /* The dropdown container */
 .dropdown {

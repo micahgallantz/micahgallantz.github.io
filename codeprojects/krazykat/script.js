@@ -42,7 +42,7 @@ window.onload = () => {
   Game = JSON.parse(localStorage.getItem('Game'))
   Game.AwayTime = Date.now() - Game.LeaveTime;
   //The awaygain will be affected by the upgrades, so i just set it to 0.00001 for now
-	Game.AwayGain = (Game.PassiveGain * 0.0001);
+	Game.AwayGain = (Game.PassiveGain * 0.00001);
   Game.RealCats += (Game.AwayTime * Game.AwayGain);
   var a = Game.RealCats;
   var b = Game.Gain;
