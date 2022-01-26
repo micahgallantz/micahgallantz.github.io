@@ -12,6 +12,7 @@
 
 <body>
 	<h1 class="title">Krazy Kat Simulator!!</h1>
+	<!--dont f with the settings because you did something with settings min and i had to fix it-->
 	<div id="settings" class="settings">
 		<h2>Settings</h2>
 	</div>
@@ -21,14 +22,18 @@
 	</h1>
 
 	<!--cat button-->
-	<img class="catButton" src="cat2.png" onclick="scoreUp()">
+	<img class="catButton" src="tex/cat2.png" onclick="scoreUp()">
 
 	<!--option bar:-->
   <div class="leftBar" id="leftBar">
-  
+<h3>Gain</h3>
+<p>Increases the cats per click</p>
+<button class="openWindowBtn" onclick="buybrush();">Brush - 25$ <br>Owned: <div id="brushowned">0</div></button>
   </div>
   <div class="rightBar" id="rightBar">
-  
+  <h3>Passive</h3>
+<p>Increases the autoclick. </p>
+<button class="openWindowBtn" onclick="buyautolitterbox();">Auto Litter box - 500</button>
   </div>
 
 	<!--Saving and loading-->
@@ -37,9 +42,10 @@
 	<script src="script.js"></script>
 	<script src="upgrades.js"></script>
 
+
 	<!--Clear save Button-->
 <img class="clrbtn" src="tex/clearSave.png" onclick="if(confirm('THIS WILL CLEAR YOUR SAVE! Are you sure you want to do this?')) {clearSave()}" alt="Clear Save"></img>
-
+<!--settings button-->
 <img class="stgbtn" id="stgbtn" src="tex/settings.png" onclick="stgchange();">
   </body>
 </html>

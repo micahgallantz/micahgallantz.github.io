@@ -7,19 +7,34 @@ body{
   background-image: url("tex/bgGold.jpg"); 
 	text-align: center;
 }
+.option{
+	background: rgb(104, 104, 104);
+  border: none;
+	float: center;
+  z-index: 10;
+  transition: background 0.5s;
+	padding: 10px;
+	text-align: center;
+	position: absolute;
+}
+.option:hover{
+  filter: drop-shadow(0px 0px 10px #fff);
+}
+
 .settings{
 	display: none;
   position: absolute;
 	text-align: center;
-	width: 70vw;
+	width: 70%;
 	background-color: gray;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  top:15%;
+  left:15%;
+  transform: translate(-50%,-50%), scale(1);
 	height: 70vh;
   border: 10px solid black; 
   border-radius: 30px;
 	z-index: 100;
+  transition: transform 0.5s;
 }
 
 h1{
@@ -33,7 +48,7 @@ h1{
 	padding-top: 10px;
   background: rgb(153, 0, 0);
   border-bottom: 4px solid white; 
-  font-size: 20px;
+  font-size: 30px;
 }
 .clrbtn{
   background: rgb(104, 104, 104);
