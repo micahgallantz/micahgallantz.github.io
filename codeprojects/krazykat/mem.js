@@ -12,6 +12,15 @@ Game = {
 	LeaveTime: Date.now(),
 	AwayTime: 0,
 
-	Brushes: 0,
+	Brush: 0,
+	Milk: 0,
+	ChocolateMilk: 0,
+	CatTreat: 0,
+	CatToy: 0,
+
+	Catnip: 0,
+	Yarn: 0,
+	ScratchingPost: 0,
 	LitterBoxes: 0,
+	AutoLitterBoxes: 0,
 };
