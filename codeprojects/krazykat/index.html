@@ -22,7 +22,7 @@
 	</h1>
 
 	<!--cat button-->
-	<img class="catButton" src="/cat2.png" onclick="scoreUp()">
+	<img class="catButton" src="tex/cat2.png" onclick="scoreUp()">
 
 	<!--option bar:-->
   <div class="leftBar" id="leftBar">
@@ -33,7 +33,9 @@
   <div class="rightBar" id="rightBar">
   <h3>Passive</h3>
 <p>Increases the autoclick. </p>
-<button class="openWindowBtn" onclick="buyautolitterbox();">Auto Litter box - 500</button>
+<button class="openWindowBtn" onclick="buyautolitterbox();">Auto Litter box - 200$
+	<br>Owned: <div id="litterowned">0</div>
+</button>
   </div>
 
 	<!--Saving and loading-->
@@ -44,8 +46,12 @@
 
 
 	<!--Clear save Button-->
-<img class="clrbtn" src="tex/clearSave.png" onclick="if(confirm('THIS WILL CLEAR YOUR SAVE! Are you sure you want to do this?')) {clearSave()}" alt="Clear Save"></img>
+	<div class="img-chamfer">
+<img class="clrbtn" src="tex/clearSave.png" onclick="if(confirm('THIS WILL CLEAR YOUR SAVE! Are you sure you want to do this?')) {clearSave()}" alt="Clear Save"></img></div>
 <!--settings button-->
+	<div class="img-chamfer">
+
 <img class="stgbtn" id="stgbtn" src="tex/settings.png" onclick="stgchange();">
+	</div>
   </body>
 </html>

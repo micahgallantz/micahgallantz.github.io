@@ -4,15 +4,17 @@
   width: 20%;
   position:absolute;
   z-index: 10;
+	color: black;
   top:0px;
   left:0px;
   border-right: 4px solid white;
-  background-image: url("tex/planks.jpg"); 
-  background-size: 100% auto; 
-  background-position: bottom 300px right 200px;
+  background-image: url("tex/blackbg.jpg"); 
+  background-size: auto 100%; 
   box-shadow: 10px 0px 100px #000;
+	background-position: 50%
 }
 .rightBar{
+	color: black;
   background: rgb(70, 70, 70);
   height: 100%;
   width: 20%;
@@ -21,20 +23,23 @@
   top:0px;
   right:0px;
   border-left: 4px solid white;
-  background-size: 100% auto; 
-  background-image: url("tex/planks.jpg"); 
+  background-size: auto 100%; 
+	background-position: 50%;
+  background-image: url("tex/blackbg.jpg"); 
   box-shadow: -10px 0px 100px #000;
 }
 
 .openWindowBtn{
-  background: rgb(104, 104, 104);
+  background: darkblue;
   border: none;
+	color: white;
   padding:5px;
   width: 100%;
   transition: background 0.5s;
 }
 .openWindowBtn:hover{
-  background: rgb(129, 129, 129);
+	color: white;
+  background: rgb(36, 27, 85);
 }
 .window{
   position: absolute;

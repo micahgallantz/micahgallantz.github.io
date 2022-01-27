@@ -19,13 +19,26 @@ if(Game.Cats <=0){
 }
 
 function buyautolitterbox(){
-	console.log('litter box')
+if (Game.Cats >= 200){
+	console.log('litter box');
+	Game.RealCats -= 200;
+	Game.LitterBoxes +=1;
+	}
+else {
+	window.alert("Bruh, your to broke to buy this, you bozo")
+}
+displayCount();
 }
 function displayCount() {
-	Game.PassiveGain += Game.Brushes * 0.1;
+	Game.Gain = 1;
+	Game.PassiveGain = 0;
+	Game.PassiveGain += (Game.LitterBoxes * 1);
+	Game.Gain += Game.Brushes ;
   counter = document.getElementById("catsVal");
 	brushowned = document.getElementById("brushowned");
 	brushowned.innerHTML = Game.Brushes;
+	litterowned = document.getElementById("litterowned");
+	litterowned.innerHTML = Game.LitterBoxes;
 	Game.Cats = Math.round(Game.RealCats);
   counter.innerHTML = Game.Cats;
 }
