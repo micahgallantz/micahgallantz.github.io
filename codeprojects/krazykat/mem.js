@@ -1,6 +1,38 @@
 //ADD HIDDEN SPIDER
 //WTF????
 
+function fromIntToStringFormatted(i){
+  if(i.length == 4){
+    return (i/1000)+"k"
+  }
+  if(i.length == 5){
+    return (i/100)+"k"
+  }
+  if(i.length == 6){
+    return (i/10)+"k"
+  }
+  if(i.length == 7){
+    return (i/1000000)+"m"
+  }
+  if(i.length == 8){
+    return (i/100000)+"m"
+  }
+  if(i.length == 9){
+    return (i/10000)+"m"
+  }
+  if(i.length == 10){
+    return (i/1000000000)+"m"
+  }
+  if(i.length == 11){
+    return (i/100000000)+"m"
+  }
+  if(i.length == 12){
+    return (i/10000000)+"m"
+  }
+  return i;
+}
+
+
 Game = {
 	Cats: 0,
 	RealCats: 0,

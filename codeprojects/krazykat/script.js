@@ -192,7 +192,7 @@ function displayCount() {
 	autoLitterOwned.innerHTML = Game.AutoLitterBoxes;
 
 	Game.Cats = Math.round(Game.RealCats);
-  counter.innerHTML = Game.Cats;
+  counter.innerHTML = fromIntToStringFormatted(Game.Cats);
 }
 window.onunload = () => {
   Game.LeaveTime = Date.now();
