@@ -8,7 +8,7 @@ if (Game.Cats >= 50){
 	Game.Gain += 1;
 	}
 else {
-	window.alert("Bruh, your to broke to buy this, you bozo")
+	window.alert("Bruh, you're to broke to buy this, you bozo")
 }
 displayCount();
 }
