@@ -21,13 +21,13 @@ function fromIntToStringFormatted(i){
     return (i/10000)+"m"
   }
   if(i.length == 10){
-    return (i/1000000000)+"m"
+    return (i/1000000000)+"b"
   }
   if(i.length == 11){
-    return (i/100000000)+"m"
+    return (i/100000000)+"b"
   }
   if(i.length == 12){
-    return (i/10000000)+"m"
+    return (i/10000000)+"b"
   }
   return i;
 }
