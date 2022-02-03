@@ -25,7 +25,7 @@
   border-left: 4px solid white;
   background-size: auto 100%; 
 	background-position: 50%;
-  background-image: url("tex/metelbg.jpg"); 
+  background: transparent;
   box-shadow: -10px 0px 100px #000;
 }
 
