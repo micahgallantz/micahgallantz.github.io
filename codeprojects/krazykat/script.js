@@ -229,6 +229,7 @@ function passiveGain() {
   Game.RealCats += Game.PassiveGain;
   localStorage.setItem("Game", JSON.stringify(Game));
   displayCount();
+
 }
 setInterval(passiveGain, 1000);
 function clearSave() {
