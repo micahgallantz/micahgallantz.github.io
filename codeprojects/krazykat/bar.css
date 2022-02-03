@@ -33,7 +33,7 @@
 .openWindowBtn{
   background: white;
   border-radius: 10px;
-	color: grey;
+	color: darkgrey;
   padding:5px;
   width: 90%;
   margin-left:auto;
@@ -41,7 +41,7 @@
   transition: transform 0.5s;
 }
 .openWindowBtn:hover{
-	color: white;
+	color: darkgray;
   transform: scale(1.06);
 }
 .window{
