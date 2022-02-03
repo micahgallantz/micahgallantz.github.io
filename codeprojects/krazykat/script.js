@@ -157,6 +157,7 @@ displayCount();
 function displayCount() {
 	Game.Awaygain = (Game.PassiveGain * 0.01);
   counter = document.getElementById("catsVal");
+	
 
 	brushOwned = document.getElementById("brushOwned");
 	brushOwned.innerHTML = Game.Brush;
@@ -192,7 +193,14 @@ function displayCount() {
 	autoLitterOwned.innerHTML = Game.AutoLitterBoxes;
 
 	Game.Cats = Math.round(Game.RealCats);
+  counter = document.getElementById("catsVal");
   counter.innerHTML = fromIntToStringFormatted(Game.Cats);
+
+	  cpc = document.getElementById("cpc");
+  cpc.innerHTML = fromIntToStringFormatted(Game.Gain);
+
+	  cps = document.getElementById("cps");
+  cps.innerHTML = fromIntToStringFormatted(Game.PassiveGain);
 }
 window.onunload = () => {
   Game.LeaveTime = Date.now();
