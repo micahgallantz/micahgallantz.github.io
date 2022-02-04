@@ -1,19 +1,21 @@
-a
+
 <!DOCTYPE html>
 <html>
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>krazy kat Simulator</title>
+	<title>Krazy Kat Simulator</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<link href="bar.css" rel="stylesheet" type="text/css" />
 	<link rel="shortcut icon" type="image/jpg" href="../../Images/GA.jpg">
 </head>
 
 <body>
+  
 	<h1 style="color:black" class="title">Krazy Kat Simulator!!</h1>
 	<p style="color:black">Also, if you want to be very nice to me, you can venmo me at @gallantzm</p>
+
 	<!--dont f with the settings because you did something with settings min and i had to fix it-->
 	<div id="settings" class="settings">
 		<h2>Settings</h2>
@@ -23,13 +25,15 @@ a
     <p>Rainbow, styles, and a few bug fixes - Ryan Grube</p>
 	</div>
 	<!--score stuff-->
+
+
 	<h1>
 		<div id="catsVal">0</div>
 	</h1>
-		<h3>
-		<p>Cats per second: <div id="cps">0</div></p>
-		<p>Cats per click: <div id="cpc">1</div></p>
-	</h3>
+		<h5>
+		<div class="cps"><p>Cats per second: <div id="cps">0</div></p></div>
+			<div class="cpc"><p>Cats per click: <div id="cpc">1</div></p></div>
+	</h5>
 
 	<!--cat button-->
 	<img class="catButton rainbow-box" id="catBtn" src="tex/cat2.png" onclick="scoreUp()">
