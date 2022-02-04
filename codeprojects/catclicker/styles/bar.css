@@ -7,7 +7,7 @@
   top:0px;
   left:0px;
   border-right: 4px solid white;
-  background: #4B7F52;
+  background: #256EFF;
   backdrop-filter: blur(10px);
   box-shadow: 10px 0px 100px #000;
 	background-position: 50%
@@ -24,7 +24,7 @@
   border-left: 4px solid white;
   background-size: auto 100%; 
 	background-position: 50%;
-  background: #4B7F52;
+  background: #256EFF;
   box-shadow: -10px 0px 100px #000;
 }
 
@@ -69,8 +69,4 @@
   height: 20px;
   line-height: 8%;
   background: red;
-}
-
-.sacrifice_button{
-	
 }

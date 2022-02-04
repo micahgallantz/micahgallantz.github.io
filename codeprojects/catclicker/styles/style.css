@@ -1,8 +1,7 @@
 /*
 color 
-
-https://coolors.co/4b7f52-7dd181-96e8bc-b6f9c9-c9ffe2
-
+**************NEW COLOR PALLET:*************************
+https://coolors.co/080705-256eff-3ddc97-fcfcfc-ff495c
 */
 
 
@@ -39,7 +38,7 @@ body{
   padding:none;
   height: 100vh;
 	color: white;
-  background: #7DD181;
+  background: #3DDC97;
   background-size: 400px 400px;
 	text-align: center;
   overflow: hidden;
@@ -90,7 +89,7 @@ h1{
   width:60%;
 	padding-bottom: 10px;
 	padding-top: 10px;
-  background: #96E8BC;
+  background: #256EFF;
   border-bottom: 4px solid white; 
   font-size: 30px;}
 .clrbtn{
