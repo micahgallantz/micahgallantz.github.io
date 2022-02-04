@@ -5,13 +5,13 @@ function displayCount() {
 	Game.Awaygain = (Game.PassiveGain * 0.01);
 	
   counter = document.getElementById("catsVal");
-  counter.innerHTML = format(Game.Cats);
+  counter.innerHTML = format(Math.floor(Game.Cats));
 
 	cpc = document.getElementById("cpc");
-  cpc.innerHTML = format(Game.Gain);
+  cpc.innerHTML = format(Math.floor(Game.Gain));
 
 	cps = document.getElementById("cps");
-  cps.innerHTML = format(Game.PassiveGain);
+  cps.innerHTML = format(Math.floor(Game.PassiveGain));
 
 }
 
