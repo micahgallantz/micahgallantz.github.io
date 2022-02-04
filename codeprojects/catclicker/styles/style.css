@@ -1,4 +1,10 @@
-/*this is an atrocity*/
+/*
+color 
+
+https://coolors.co/4b7f52-7dd181-96e8bc-b6f9c9-c9ffe2
+
+*/
+
 
 @keyframes moveBg{
   0%{ background-position-x:-1600px }
@@ -33,7 +39,7 @@ body{
   padding:none;
   height: 100vh;
 	color: white;
-  background-image: url("tex/weave.jpg");
+  background: #7DD181;
   background-size: 400px 400px;
 	text-align: center;
   overflow: hidden;
@@ -84,21 +90,7 @@ h1{
   width:60%;
 	padding-bottom: 10px;
 	padding-top: 10px;
-  background: repeating-linear-gradient(
-        90deg,
-        rgba(255, 0, 0, 1) 0%,
-        rgba(255, 154, 0, 1) 10%,
-        rgba(208, 222, 33, 1) 20%,
-        rgba(79, 220, 74, 1) 30%,
-        rgba(63, 218, 216, 1) 40%,
-        rgba(47, 201, 226, 1) 50%,
-        rgba(28, 127, 238, 1) 60%,
-        rgba(95, 21, 242, 1) 70%,
-        rgba(186, 12, 248, 1) 80%,
-        rgba(251, 7, 217, 1) 90%,
-        rgba(255, 0, 0, 1) 100%
-    );
-    animation: moveBg 40s linear 0s infinite forwards;
+  background: #96E8BC;
   border-bottom: 4px solid white; 
   font-size: 30px;}
 .clrbtn{

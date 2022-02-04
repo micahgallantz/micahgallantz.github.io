@@ -150,18 +150,31 @@ new Upgrade("Bed", 800000, 1.3, ()=>{Game.PassiveGain += 400}),
 new Upgrade("Auto Litter box", 10000000, 1.35, ()=>{Game.PassiveGain += 2000}),
 new Upgrade("Ascendant Toy", 1000000000, 1.4, ()=>{Game.PassiveGain += 50000}),
 ], "passive")
-clicks = new UpgradeWindow([
-  new Upgrade("test1", 10, 1.01, "passive"),
-  new Upgrade("test2", 10, 1.01, "passive"),
-  new Upgrade("test3", 15, 1.01, "passive"),
-  new Upgrade("test4", 10, 1.01, "passive"),
-], "clicks")
-multipliers = new UpgradeWindow([
-  new Upgrade("m1", 10, 1.01, "passive"),
-  new Upgrade("m2", 10, 1.01, "passive"),
-  new Upgrade("m3", 15, 1.01, "passive"),
-  new Upgrade("m4", 10, 1.01, "passive"),
-], "multipliers")
 
-passive.div.classList.remove("minimized_upgrade_window")
+clicks = new UpgradeWindow([
+  new Upgrade("Brush", 15, 1.1, ()=>{Game.Gain += 1}),
+  new Upgrade("Precise mouspad", 150, 1.1, ()=>{Game.Gain += 10}),
+  new Upgrade("Toy MKII", 500, 1.2, ()=>{Game.Gain += 30}),
+  new Upgrade("Toy MKIII", 1200, 1.2, ()=>{Game.Gain += 500}),
+  new Upgrade("Toy MKIV", 20000, 1.3, ()=>{Game.Gain += 1000}),
+  new Upgrade("Electric brush", 100000, 1.3, ()=>{Game.Gain += 10500}),
+  new Upgrade("Preciser mousepad", 10000000, 1.4, ()=>{Game.Gain += 100000}),
+], "clicks")
+
+//multipliers = new UpgradeWindow([
+//  new Upgrade("Milk", 10, 1.01, "passive"),
+//  new Upgrade("Half and Half", 10, 1.01, "passive"),
+//  new Upgrade("Heavy Cream", 15, 1.01, "passive"),
+//  new Upgrade("Chocolate milk", 10, 1.01, "passive"),
+//], "Multipliers")
+
+away = new UpgradeWindow([
+  new Upgrade("Longer attention span", 100000, 1.1, ()=>{Game.AwayGain += 10}),
+  new Upgrade("Cat Nap", 2000000, 1.1, ()=>{Game.AwayGain += 22}),
+  new Upgrade("Sun puddle nap", 4000000, 1.2, ()=>{Game.AwayGain += 45}),
+  new Upgrade("Cat Nap", 20000000, 1.1, ()=>{Game.AwayGain += 100})
+], "away")
+
+
+clicks.div.classList.remove("minimized_upgrade_window")
 }

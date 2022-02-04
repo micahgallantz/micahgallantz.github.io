@@ -1,0 +1,19 @@
+.popup_div{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 100000;
+  background: white;
+  display: flex;
+  border-radius: 10px;
+}
+.popup_msg{
+
+}
+.popup_button_exit{
+
+}
+.popup_button_ok{
+  
+}

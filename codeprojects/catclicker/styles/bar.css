@@ -1,5 +1,4 @@
 .leftBar{
-  background: rgb(70, 70, 70);
   height: 100%;
   width: 20%;
   position:absolute;
@@ -8,14 +7,13 @@
   top:0px;
   left:0px;
   border-right: 4px solid white;
-  background: rgb(65, 0, 168);
+  background: #4B7F52;
   backdrop-filter: blur(10px);
   box-shadow: 10px 0px 100px #000;
 	background-position: 50%
 }
 .rightBar{
 	color: black;
-  background: rgb(70, 70, 70);
   height: 100%;
   width: 20%;
   position:absolute;
@@ -26,7 +24,7 @@
   border-left: 4px solid white;
   background-size: auto 100%; 
 	background-position: 50%;
-  background: rgb(65, 0, 168);
+  background: #4B7F52;
   box-shadow: -10px 0px 100px #000;
 }
 
@@ -71,4 +69,8 @@
   height: 20px;
   line-height: 8%;
   background: red;
+}
+
+.sacrifice_button{
+	
 }
