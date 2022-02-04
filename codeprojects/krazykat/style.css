@@ -1,3 +1,5 @@
+/*this is an atrocity*/
+
 @keyframes moveBg{
   0%{ background-position-x:-1600px }
   100%{ background-position-x:1600px }
@@ -20,28 +22,19 @@
         rgba(251, 7, 217, 1) 90%,
         rgba(255, 0, 0, 1) 100%
     );
-    animation: moveBg 20s linear 0s infinite forwards;
+    animation: moveBg 40s linear 0s infinite forwards;
 }
-
-
+h1, h2, h3, h4, h5, h6, p, img{
+  user-select: none;
+}
 body{
+  font-family: Arial;
 	margin: 0px;
   padding:none;
+  height: 100vh;
 	color: white;
-  background: linear-gradient(
-        45deg,
-        rgba(255, 0, 0, 1) 0%,
-        rgba(255, 154, 0, 1) 10%,
-        rgba(208, 222, 33, 1) 20%,
-        rgba(79, 220, 74, 1) 30%,
-        rgba(63, 218, 216, 1) 40%,
-        rgba(47, 201, 226, 1) 50%,
-        rgba(28, 127, 238, 1) 60%,
-        rgba(95, 21, 242, 1) 70%,
-        rgba(186, 12, 248, 1) 80%,
-        rgba(251, 7, 217, 1) 90%,
-        rgba(255, 0, 0, 1) 100%
-    );
+  background-image: url("tex/weave.jpg");
+  background-size: 400px 400px;
 	text-align: center;
   overflow: hidden;
 }
@@ -91,7 +84,21 @@ h1{
   width:60%;
 	padding-bottom: 10px;
 	padding-top: 10px;
-  background: darkblue;
+  background: repeating-linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+    animation: moveBg 40s linear 0s infinite forwards;
   border-bottom: 4px solid white; 
   font-size: 30px;}
 .clrbtn{
@@ -128,7 +135,9 @@ h1{
   height: 50vh;
   width: 50vh;
   margin: auto;
+  backdrop-filter: blur(300px);
   border-radius: 50%;
+  border: 10px solid black;
   object-fit: cover;
 	color: #fff;
   filter: drop-shadow(0px 0px 10px black);
@@ -137,5 +146,5 @@ h1{
 .catButton:hover{
   transform: scale(1.06);
   filter: drop-shadow(0px 0px 20px #fff);
-  animation-duration: 2s;
+  animation-duration: 5s;
 }

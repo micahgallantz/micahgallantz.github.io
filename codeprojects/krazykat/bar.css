@@ -8,7 +8,7 @@
   top:0px;
   left:0px;
   border-right: 4px solid white;
-  background: rgb(208, 119, 243);
+  background: rgb(65, 0, 168);
   backdrop-filter: blur(10px);
   box-shadow: 10px 0px 100px #000;
 	background-position: 50%
@@ -26,7 +26,7 @@
   border-left: 4px solid white;
   background-size: auto 100%; 
 	background-position: 50%;
-  background: rgb(123, 243, 119);
+  background: rgb(65, 0, 168);
   box-shadow: -10px 0px 100px #000;
 }
 

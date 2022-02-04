@@ -8,13 +8,14 @@
 	<title>Krazy Kat Simulator</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<link href="bar.css" rel="stylesheet" type="text/css" />
+	<link href="upgrades.css" rel="stylesheet" type="text/css" />
 	<link rel="shortcut icon" type="image/jpg" href="../../Images/GA.jpg">
 </head>
 
 <body>
   
 	<h1 style="color:black" class="title">Krazy Kat Simulator!!</h1>
-	<p style="color:black">Also, if you want to be very nice to me, you can venmo me at @gallantzm</p>
+	<p style="color:white">Also, if you want to be very nice to me, you can venmo me at @gallantzm</p>
 
 	<!--dont f with the settings because you did something with settings min and i had to fix it-->
 	<div id="settings" class="settings">
@@ -22,7 +23,7 @@
     <br>
     <p>Creds:</p>
     <p>Most of the game - Micah Gallantz</p>
-    <p>Rainbow, styles, and a few bug fixes - Ryan Grube</p>
+    <p>Styles, Upgrade System, Help, and some other details - Ryan Grube</p>
 	</div>
 	<!--score stuff-->
 
@@ -31,8 +32,8 @@
 		<div id="catsVal">0</div>
 	</h1>
 		<h5>
-		<div class="cps"><p>Cats per second: <div id="cps">0</div></p></div>
-			<div class="cpc"><p>Cats per click: <div id="cpc">1</div></p></div>
+		<div class="cps"><p style="display:inline;">Cats per second: <div style="display:inline;"id="cps">0</div></p></div>
+			<div class="cpc"><p style="display:inline;">Cats per click: <div style="display:inline;"id="cpc">1</div></p></div>
 	</h5>
 
 	<!--cat button-->
@@ -40,60 +41,19 @@
 
 	<!--option bar:-->
   <div class="leftBar" id="leftBar">
-<h3 style="font-family:Arial; font-size:20px;">Gain</h3>
-<p>Increases the cats per click</p>
-<button class="openWindowBtn" onclick="buyBrush();">Brush - 50$ <br>Owned: <div id="brushOwned">0</div><br>Adds 1 Cat per click</button>
-<br><br>
-
-
-<button class="openWindowBtn" onclick="buymilk();">Milk - 500$ <br>Owned: <div id="milkOwned">0</div><br>Adds 5 Cats per click</button>
-<br><br>
-
-
-<button class="openWindowBtn" onclick="buychocolatemilk();">Chocolate milk - 10000$ <br>Owned: <div id="chocolateMilkOwned">0</div><br>Adds 50 Cats per click</button>
-<br><br>
-
-
-<button class="openWindowBtn" onclick="buytreat();">Cat Treat - 100000$ <br>Owned: <div id="treatOwned">0</div><br>Adds 500 Cats per click</button>
-<br><br>
-
-
-<button class="openWindowBtn" onclick="buytoy();">Cat toy - 1000000$ <br>Owned: <div id="toyOwned">0</div><br>Adds 5000 Cats per click</button>
-<br><br>
+   
+    
   </div>
+
+
   <div class="rightBar" id="rightBar">
-  <h3>Passive</h3>
-<p>Increases the autoclick. </p>
-
-
-<button class="openWindowBtn" onclick="buyCatnip();">Catnip - 500$
-	<br>Owned: <div id="catnipOwned">0</div><br>Gives you 1 Cat per second</button>
-<br><br>
-
-
-	<button class="openWindowBtn" onclick="buyYarn();">Ball of yarn - 10000$
-	<br>Owned: <div id="yarnOwned">0</div><br>Gives you 50 Cats per second</button>
-<br><br>
-
-
-	<button class="openWindowBtn" onclick="buyScratchingPost();">Scratching Post - 50000$
-	<br>Owned: <div id="scratchingPostOwned">0</div><br>Gives you 500 Cats per second</button>
-<br><br>
-
-
-	<button class="openWindowBtn" onclick="buyLitterBox();">Litter Box - 1000000$
-	<br>Owned: <div id="litterOwned">0</div><br>Gives you 1000 Cats per second</button>
-<br><br>
-
-
-	<button class="openWindowBtn" onclick="buyAutoLitterBox();">Auto Litter box - 100000000$
-	<br>Owned: <div id="autoLitterOwned">0</div><br>Gives you 10000 Cats per second</button>
-</button>
-<br>
+    <h1 class="rightBarTitle"> UPGRADES <h1>
+  
   </div>
 
 	<!--Saving and loading-->
 
+	<script src="format.js"></script>
 	<script src="mem.js"></script>
 	<script src="script.js"></script>
 	<script src="upgrades.js"></script>
