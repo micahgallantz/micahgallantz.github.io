@@ -169,11 +169,12 @@ clicks = new UpgradeWindow([
 //], "Multipliers")
 
 away = new UpgradeWindow([
-  new Upgrade("Longer attention span", 100000, 1.1, ()=>{Game.AwayGain += 10}),
-  new Upgrade("Cat Nap", 2000000, 1.1, ()=>{Game.AwayGain += 22}),
-  new Upgrade("Sun puddle nap", 4000000, 1.2, ()=>{Game.AwayGain += 45}),
-  new Upgrade("Cat Nap", 20000000, 1.1, ()=>{Game.AwayGain += 100})
+  new Upgrade("Longer attention span", 1000000, 1.1, ()=>{Game.AwayGain += 10}),
+  new Upgrade("Cat Nap", 5000000, 1.1, ()=>{Game.AwayGain += 22}),
+  new Upgrade("Sun puddle nap", 100000000, 1.2, ()=>{Game.AwayGain += 45}),
+  new Upgrade("Cat seraph", 10000000000, 1.2, ()=>{Game.AwayGain += 1000}),
 ], "away")
+
 
 
 clicks.div.classList.remove("minimized_upgrade_window")
