@@ -21,11 +21,7 @@
   float: left;
   position: absolute;
   height: 95%;
-  background: linear-gradient(
-    90deg,
-    rgb(41, 14, 128) 0%,
-    rgb(0, 145, 189) 100%
-  );
+  background: rgb(42, 255, 227);
   backdrop-filter: blur(100px);
   border-top:5px solid white;
   border-right:5px solid white;
