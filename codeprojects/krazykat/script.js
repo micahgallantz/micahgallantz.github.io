@@ -3,7 +3,8 @@ var stgup = false;
 //display Game.Cats on the counter
 function displayCount() {
 	Game.Awaygain = (Game.PassiveGain * 0.01);
-	
+	Game.Cats = (Math.round(Game.Cats))
+
   counter = document.getElementById("catsVal");
   counter.innerHTML = format(Game.Cats);
 
