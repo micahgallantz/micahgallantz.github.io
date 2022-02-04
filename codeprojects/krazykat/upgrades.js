@@ -66,7 +66,7 @@ class Upgrade {
 
 
     this.update = () => {
-        this.upgrade_cost.innerHTML = `$${format(this.cost)}`
+        this.upgrade_cost.innerHTML = `$${format(Math.floor(this.cost))}`
         this.upgrade_owned.innerHTML = `${format(this.amtOwned)}`
     }
     
