@@ -7,10 +7,9 @@
   top:0px;
   left:0px;
   border-right: 4px solid white;
-  background: #256EFF;
+  background-image:url("../tex/bgBlue.jpg");
   backdrop-filter: blur(10px);
   box-shadow: 10px 0px 100px #000;
-	background-position: 50%
 }
 .rightBar{
 	color: black;
@@ -22,9 +21,7 @@
   right:0px;
 	backdrop-filter: blur(10px);
   border-left: 4px solid white;
-  background-size: auto 100%; 
-	background-position: 50%;
-  background: #256EFF;
+  background-image:url("../tex/bgBlue.jpg");
   box-shadow: -10px 0px 100px #000;
 }
 

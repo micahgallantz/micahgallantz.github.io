@@ -153,7 +153,7 @@ class NonPermaUpgrade{
 
       this.upgrade_owned = document.createElement('p')
       this.upgrade_owned.className = "upgrade_owned";
-      this.upgrade_owned.innerHTML = format(this.amtOwned);
+      this.upgrade_owned.innerHTML = "∞";
 
       this.ownedDiv = document.createElement('div');
       this.ownedDiv.className = "ownedDiv";
@@ -175,7 +175,7 @@ class NonPermaUpgrade{
         this.buy();
       }
     }
-
+  }
 }
 
 onStatsLoaded = () => {
@@ -234,17 +234,17 @@ away = new UpgradeWindow([
 exterm = new UpgradeWindow([
   new NonPermaUpgrade("Roll the die", 1000000, ()=>{
     if(Math.random() > 0.5){
-      Game.Cats * 10;
+      Game.Cats *= 3;
     }else{
-      Game.Cats = 0;
+      Game.Cats /= 2;
     }
   }),
-  new NonPermaUpgrade("Exterminator I", Game.Cats/5, ()=>{}),
-  new NonPermaUpgrade("Exterminator II", Game.Cats/4,()=>{}),
-  new NonPermaUpgrade("Exterminator III", Game.Cats/3,()=>{}),
-  new NonPermaUpgrade("Exterminator IV", Game.Cats/2,()=>{}),
-  new NonPermaUpgrade("Exterminator V", Game.Cats,()=>{}),
-], "exterminator")
+  new NonPermaUpgrade("Exterminator I", Game.Cats/5, ()=>{Game.Cats -= (Game.Cats/5)}),
+  new NonPermaUpgrade("Exterminator II", Game.Cats/4,()=>{Game.Cats -= (Game.Cats/4)}),
+  new NonPermaUpgrade("Exterminator III", Game.Cats/3,()=>{Game.Cats -= (Game.Cats/3)}),
+  new NonPermaUpgrade("Exterminator IV", Game.Cats/2,()=>{Game.Cats -= (Game.Cats/2)}),
+  new NonPermaUpgrade("Exterminator V", Game.Cats,()=>{Game.Cats -= (Game.Cats)}),
+], "deleter")
 
-clicks.div.classList.remove("minimized_upgrade_window")
+passive.div.classList.remove("minimized_upgrade_window")
 }
