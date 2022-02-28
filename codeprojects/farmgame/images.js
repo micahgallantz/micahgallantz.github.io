@@ -2,6 +2,7 @@ var w = h = canvas.width = canvas.height = 640;
 
 const grass = new Image();
 <<<<<<< HEAD
+<<<<<<< HEAD
 grass.src = 'micahgallantz.com/codeprojects/farmgame/tex/grass.png';
 
 const moneytex = new Image();
@@ -58,6 +59,8 @@ grassHotbar.src = 'micahgallantz.com/codeprojects/farmgame/tex/grassHotbar.png';
 const tilledDirtHotbar = new Image();
 tilledDirtHotbar.src = 'micahgallantz.com/codeprojects/farmgame/tex/tilledDirtHotbar.png';
 =======
+=======
+>>>>>>> origin/main
 grass.src = '/tex/grass.png';
 
 const moneytex = new Image();
@@ -112,5 +115,9 @@ const grassHotbar = new Image();
 grassHotbar.src = '../tex/grassHotbar.png';
 
 const tilledDirtHotbar = new Image();
+<<<<<<< HEAD
+tilledDirtHotbar.src = '../tex/tilledDirtHotbar.png';
+>>>>>>> origin/main
+=======
 tilledDirtHotbar.src = '../tex/tilledDirtHotbar.png';
 >>>>>>> origin/main
