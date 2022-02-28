@@ -4,13 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Diamond Cove</title>
-    <link href="./styles/style.css" rel="stylesheet" type="text/css" />
-    <link href="./styles/store.css" rel="stylesheet" type="text/css" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="./store.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
 
 
 <canvas id="canvas" class="canvas"></canvas>
+<script src="./images.js"></script>
+<script src="./mem.js"></script>
+<script src="./data.js"></script>
+<script src="./farming.js"></script>
+<script src="./store.js"></script>
+ <script src="./script.js"></script>
+<script src="./inventory.js"></script>
 <button class="storeButton" id="storeButton"onclick="storeOpen()">Store</button>
 
 <div class="store" id="store">
@@ -53,15 +60,6 @@
 <div id="input">
 <input class="textBox"name="textbox" type="text" />
 
-<input class="sendButton"name="buttonExecute" onclick="eval(document.getElementsByName('textbox')[0].value)" type="button" value="Execute" /></div>
-
-		<script src="/scripts/images.js"></script>
-	  <script src="/scripts/script.js"></script>
-    <script src="/scripts/mem.js"></script>
-		<script src="/scripts/farming.js"></script>
-    <script src="/scripts/saving.js"></script>
-		<script src="/scripts/store.js"></script>
-		<script src="/scripts/data.js"></script>
-		<script src="/scripts/inventory.js"></script>
+<input class="sendButton"name="buttonExecute" onclick="eval(document.getElementsByName('textbox')[0].value)" type="button" value="Execute"/></div>
   </body>
 </html>	

@@ -32,14 +32,13 @@ background-color: gray;
 	  position: absolute;
 }
 
-#canvas {
+.canvas {
   position: absolute;
-  background-color:lightgrey;
 }
 
-#store{
+.store{
 	display: none;
 }
-#button{
+.button{
 	display: block;
 }
