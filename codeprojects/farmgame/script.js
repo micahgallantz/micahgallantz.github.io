@@ -1,12 +1,16 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext('2d');
+var w = h = canvas.width = canvas.height = 640;
+
+var tileSize = 32;
 
 window.onunload = () => {
   localStorage.setItem("Game", JSON.stringify(Game));
 }
 
 window.onload = () => {
-
+var carrotNum = document.getElementById("carrotNum");
+var cashMoneys = document.getElementById("cashMoneys");
   //if ls is undefined, just set it to the default game and procede, if not, set Game to the ls value
   if (JSON.parse(localStorage.getItem('Game')) == null) {
     localStorage.setItem("Game", JSON.stringify(Game));
