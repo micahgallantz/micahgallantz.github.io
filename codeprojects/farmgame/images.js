@@ -1,66 +1,6 @@
 var w = h = canvas.width = canvas.height = 640;
 
 const grass = new Image();
-<<<<<<< HEAD
-<<<<<<< HEAD
-grass.src = 'micahgallantz.com/codeprojects/farmgame/tex/grass.png';
-
-const moneytex = new Image();
-moneytex.src = 'micahgallantz.com/codeprojects/farmgame/tex/money.png';
-
-const carrotSeedHotbar = new Image();
-carrotSeedHotbar.src = 'micahgallantz.com/codeprojects/farmgame/tex/carrotSeedHotbar.png';
-
-const carrotCount = new Image();
-carrotCount.src = 'micahgallantz.com/codeprojects/farmgame/tex/carrotCount.png';
-
-const carrotSeed = new Image();
-carrotSeed.src = 'micahgallantz.com/codeprojects/farmgame/tex/carrotSeed.png';
-
-const stonePath = new Image();
-stonePath.src = 'micahgallantz.com/codeprojects/farmgame/tex/stonePath.png';
-
-const dirt = new Image();
-dirt.src = 'micahgallantz.com/codeprojects/farmgame/tex/dirt.png';
-
-const tilledDirt = new Image();
-tilledDirt.src = 'micahgallantz.com/codeprojects/farmgame/tex/tilledDirt.png';
-
-const carrot = new Image();
-carrot.src = 'micahgallantz.com/codeprojects/farmgame/tex/carrot.png';
-
-const carrotStage1 = new Image();
-carrotStage1.src = 'micahgallantz.com/codeprojects/farmgame/tex/carrotStage1.png';
-
-const carrotStage2 = new Image();
-carrotStage2.src = 'micahgallantz.com/codeprojects/farmgame/tex/carrotStage2.png';
-
-const curser = new Image();
-curser.src = 'micahgallantz.com/codeprojects/farmgame/tex/curser.png';
-
-const hotbar_tex = new Image();
-hotbar_tex.src = 'micahgallantz.com/codeprojects/farmgame/tex/hotbar.png';
-
-const hotbarSelected = new Image();
-hotbarSelected.src = 'micahgallantz.com/codeprojects/farmgame/tex/hotbarSelected.png';
-
-const carrotHotbar = new Image();
-carrotHotbar.src = 'micahgallantz.com/codeprojects/farmgame/tex/carrotHotbar.png';
-
-const stonePathHotbar = new Image();
-stonePathHotbar.src = 'micahgallantz.com/codeprojects/farmgame/tex/storePathHotbar.png';
-
-const dirtHotbar = new Image();
-dirtHotbar.src = 'micahgallantz.com/codeprojects/farmgame/tex/dirtHotbar.png';
-
-const grassHotbar = new Image();
-grassHotbar.src = 'micahgallantz.com/codeprojects/farmgame/tex/grassHotbar.png';
-
-const tilledDirtHotbar = new Image();
-tilledDirtHotbar.src = 'micahgallantz.com/codeprojects/farmgame/tex/tilledDirtHotbar.png';
-=======
-=======
->>>>>>> origin/main
 grass.src = '/tex/grass.png';
 
 const moneytex = new Image();
@@ -91,33 +31,28 @@ const carrotStage1 = new Image();
 carrotStage1.src = '/tex/carrotStage1.png';
 
 const carrotStage2 = new Image();
-carrotStage2.src = '/tex/carrotStage2.png';
+carrotStage2.src = 'codeprojects/farmgame/tex/carrotStage2.png';
 
 const curser = new Image();
-curser.src = '/tex/curser.png';
+curser.src = 'codeprojects/farmgame/tex/curser.png';
 
 const hotbar_tex = new Image();
-hotbar_tex.src = '/tex/hotbar.png';
+hotbar_tex.src = 'codeprojects/farmgame/tex/hotbar.png';
 
 const hotbarSelected = new Image();
-hotbarSelected.src = '/tex/hotbarSelected.png';
+hotbarSelected.src = 'codeprojects/farmgame/tex/hotbarSelected.png';
 
 const carrotHotbar = new Image();
-carrotHotbar.src = '/tex/carrotHotbar.png';
+carrotHotbar.src = 'codeprojects/farmgame/tex/carrotHotbar.png';
 
 const stonePathHotbar = new Image();
-stonePathHotbar.src = '../tex/storePathHotbar.png';
+stonePathHotbar.src = 'codeprojects/farmgame/tex/storePathHotbar.png';
 
 const dirtHotbar = new Image();
-dirtHotbar.src = '../tex/dirtHotbar.png';
+dirtHotbar.src = 'codeprojects/farmgame/tex/dirtHotbar.png';
 
 const grassHotbar = new Image();
-grassHotbar.src = '../tex/grassHotbar.png';
+grassHotbar.src = 'codeprojects/farmgame/tex/grassHotbar.png';
 
 const tilledDirtHotbar = new Image();
-<<<<<<< HEAD
-tilledDirtHotbar.src = '../tex/tilledDirtHotbar.png';
->>>>>>> origin/main
-=======
-tilledDirtHotbar.src = '../tex/tilledDirtHotbar.png';
->>>>>>> origin/main
+tilledDirtHotbar.src = 'codeprojects/farmgame/tex/tilledDirtHotbar.png';
