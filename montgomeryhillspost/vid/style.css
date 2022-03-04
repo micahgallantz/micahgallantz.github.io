@@ -1,0 +1,104 @@
+h1 {
+	text-align: center;
+	margin: 25px;
+	font-size: 50px;
+}
+p {
+	text-align: justify;
+	font-size: 25px;
+	margin: 100px;
+  text-indent: 60px;
+
+}
+marquee{
+	background-color: red;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 25px;
+
+}
+h4 {
+  font-weight: normal;
+	text-align: justify;
+	font-size: 25px;
+}
+h2 {
+	margin: 25px;
+}
+h3 {
+	margin: 25px;
+}
+h4 {
+	margin: 25px;
+}
+h5 {
+	margin: 25px;
+}
+img {
+	float: left;
+	margin: 5px;
+}
+
+/*menu bar*/
+.topnav {
+  overflow: hidden;
+	position: sticky;
+  background: #0d9127;
+	height: 85px;
+	line-height: 80px;
+	width: 100%;
+	top: 0;
+	z-index: 1000000;
+}
+
+.topnav a {
+  float: right;
+  color: black;
+	line-height: 80px;
+  text-align: center;
+  height: 85px;
+  padding-left: 20px;
+	padding-right: 20px; 
+  text-decoration: none;
+  font-size: 20px;
+	transition: background-color 0.5s;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background: #07641a;
+  color: white;
+}
+
+.topnav a.active {
+	background: #dedede;
+  color: black;
+}
+.d a.active {
+	background-color: black;
+	color: white;
+  }
+.topnav .icon {
+  display: none;
+}
+
+/*animations*/
+@keyframes bodyAnim{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+/*misc styling*/
+body{
+	margin: 0px;
+	background: #dedede;
+	animation: bodyAnim 2s ease 0s 1;
+}
+#title{
+	display: inline;
+	margin: 25px;
+}
