@@ -1,4 +1,11 @@
 /*Margins*/
+marquee{
+	background-color: red;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 25px;
+}
 h1 {
 	margin: 25px;
 }
