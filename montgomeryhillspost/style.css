@@ -3,7 +3,7 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #dedede;
+	background: #EDFFEC;
 
 }
 section.top{
@@ -11,7 +11,7 @@ section.top{
   display: flex;
   align-items: center;
 	text-align: center;
-  background-color: #dedede;
+	background: #EDFFEC;
 
 }
 img{
@@ -26,19 +26,19 @@ img{
 
 }
 section:nth-child(1){
-  background-color: #dedede;
+	background: #EDFFEC;
 }
 
 section:nth-child(2){
-  background-color: #dedede;
+	background: #EDFFEC;
 }
 
 section:nth-child(3){
-  background-color: #dedede;
+	background: #EDFFEC;
 }
 
 section:nth-child(4){
-  background-color: #dedede;
+	background: #EDFFEC;
 }
 
 section .container{
@@ -55,7 +55,7 @@ section .cards{
 }
 
 section .cards .text-card{
-  background: #59a669;
+  background: #61E786;
   margin: 20px;
   padding: 20px;
 }
@@ -108,7 +108,7 @@ p {
 
 }
 marquee{
-	background-color: red;
+	background-color: #C5283D;
 	color: white;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -145,7 +145,7 @@ img {
 .topnav {
   overflow: hidden;
 	position: sticky;
-  background: #59a669;
+  background: #61E786;
 	height: 85px;
 	line-height: 80px;
 	width: 100%;
@@ -167,12 +167,12 @@ img {
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background: #398448;
-  color: white;
+  background: #8ce8a6;
+  color: black;
 }
 
 .topnav a.active {
-	background: #dedede;
+	background: #EDFFEC;
   color: black;
 }
 .d a.active {
@@ -196,7 +196,7 @@ img {
 /*misc styling*/
 body{
 	margin: 0px;
-	background: #dedede;
+	background: #EDFFEC;
 	animation: bodyAnim 2s ease 0s 1;
 }
 #title{
