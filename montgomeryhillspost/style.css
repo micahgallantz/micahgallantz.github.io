@@ -55,7 +55,7 @@ section .cards{
 }
 
 section .cards .text-card{
-  background: #0d9127;
+  background: #59a669;
   margin: 20px;
   padding: 20px;
 }
@@ -145,7 +145,7 @@ img {
 .topnav {
   overflow: hidden;
 	position: sticky;
-  background: #0d9127;
+  background: #59a669;
 	height: 85px;
 	line-height: 80px;
 	width: 100%;
@@ -167,7 +167,7 @@ img {
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background: #07641a;
+  background: #398448;
   color: white;
 }
 
