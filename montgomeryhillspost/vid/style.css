@@ -1,3 +1,100 @@
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	background: #EDFFEC;
+
+}
+section.top{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+	text-align: center;
+	background: #EDFFEC;
+
+}
+img{
+	padding-right: 10px;
+	padding-left: 100px;
+	padding-bottom: 10px;
+	padding-top: 75px;
+	width: 50%;
+	
+
+
+
+}
+section:nth-child(1){
+	background: #EDFFEC;
+}
+
+section:nth-child(2){
+	background: #EDFFEC;
+}
+
+section:nth-child(3){
+	background: #EDFFEC;
+}
+
+section:nth-child(4){
+	background: #EDFFEC;
+}
+
+section .container{
+  margin: 100px;
+}
+
+section h2{
+  font-size: 40px;
+  text-align: center;
+}
+
+section .cards{
+  display: flex;
+}
+
+section .cards .text-card{
+  background: #61E786;
+  margin: 20px;
+  padding: 20px;
+}
+
+section .cards .text-card h3{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 40px;
+  }
+
+  section .cards{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+
+
+
+
+
 h1 {
 	text-align: center;
 	margin: 25px;
@@ -11,7 +108,7 @@ p {
 
 }
 marquee{
-	background-color: red;
+	background-color: #C5283D;
 	color: white;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -39,12 +136,16 @@ img {
 	float: left;
 	margin: 5px;
 }
+.me {
+	display: none;
+}
+
 
 /*menu bar*/
 .topnav {
   overflow: hidden;
 	position: sticky;
-  background: #0d9127;
+  background: #61E786;
 	height: 85px;
 	line-height: 80px;
 	width: 100%;
@@ -66,12 +167,12 @@ img {
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background: #07641a;
-  color: white;
+  background: #8ce8a6;
+  color: black;
 }
 
 .topnav a.active {
-	background: #dedede;
+	background: #EDFFEC;
   color: black;
 }
 .d a.active {
@@ -95,7 +196,8 @@ img {
 /*misc styling*/
 body{
 	margin: 0px;
-	background: #dedede;
+	text-align: center;
+	background: #EDFFEC;
 	animation: bodyAnim 2s ease 0s 1;
 }
 #title{
