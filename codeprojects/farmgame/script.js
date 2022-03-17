@@ -80,10 +80,6 @@ document.addEventListener("click", changeTile);
 				}}
 				switch(Game.Crops[row][col].type){
 
-			case 0: 
-				//nothing
-				break;
-
 				case 1: 
 				//carrot
 				switch(Game.Crops[row][col].stage){
@@ -102,7 +98,7 @@ document.addEventListener("click", changeTile);
 				}
 				break;
 				case 2: 
-				//potatoe
+				//potato
 				break;
 
 			}
@@ -137,5 +133,4 @@ document.addEventListener("click", changeTile);
   drawHotBar();
 	requestAnimationFrame(loop);
 }
-setTimeout(requestAnimationFrame(loop)
-, 500); 
+requestAnimationFrame(loop); 

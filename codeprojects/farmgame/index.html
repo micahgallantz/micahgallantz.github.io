@@ -1,65 +1,119 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Diamond Cove</title>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
-    <link href="store.css" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="store.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <canvas id="canvas" class="canvas"></canvas>
+    <script src="images.js"></script>
+    <script src="mem.js"></script>
+    <script src="data.js"></script>
+    <script src="farming.js"></script>
+    <script src="store.js"></script>
+    <script src="script.js"></script>
+    <script src="inventory.js"></script>
+    <button class="storeButton" id="storeButton" onclick="storeOpen()">
+      Store
+    </button>
 
-
-<canvas id="canvas" class="canvas"></canvas>
-<script src="images.js"></script>
-<script src="mem.js"></script>
-<script src="data.js"></script>
-<script src="farming.js"></script>
-<script src="store.js"></script>
-<script src="script.js"></script>
-<script src="inventory.js"></script>
-<button class="storeButton" id="storeButton"onclick='storeOpen()'>Store</button>
-
-<div class="store" id="store">
-	<div class="title"><h1>Store</h1>
-</div>
-<div class="sellPanel" id="sellPanel">
-	<h2>Sell</h2>
-	<h3>Carrots: <div id="carrotNum">0</div></h3>
-<button class="transactionButton" onclick="	if(Game.Carrots > 0){
+    <div class="store" id="store">
+      <div class="title"><h1>Store</h1></div>
+      <div class="sellPanel" id="sellPanel">
+        <h2>Sell</h2>
+        <h3>
+          Carrots:
+          <div id="carrotNum">0</div>
+        </h3>
+        <button
+          class="transactionButton"
+          onclick="	if(Game.Carrots > 0){
 	Game.Carrots -= 1;
-	Game.Money += 15;}">Carrots</button>
-</div>
-<div class="buyPanel" id="buyPanel">
-	<h2>Buy</h2>
-		<h3>Money: <div id="cashMoneys">0</div></h3>
+	Game.Money += 15;}"
+        >
+          Carrots
+        </button>
+      </div>
+      <div class="buyPanel" id="buyPanel">
+        <h2>Buy</h2>
+        <h3>
+          Money:
+          <div id="cashMoneys">0</div>
+        </h3>
 
-	
-	<button class="transactionButton" onclick="	if(Game.Money >= 10){
+        <button
+          class="transactionButton"
+          onclick="	if(Game.Money >= 10){
 	Game.CarrotSeeds += 1;
-	Game.Money -= 10;}">Carrot Seed - $10</button>
+	Game.Money -= 10;
+	if(!t){
+		for (let i=0;i<Game.hotbar.length;i++) {
+if(Game.hotbar[i] == 0){
+	Game.hotbar[i] = 1;
+	break;
+}
+		}
+	}
 	
-	<button class="transactionButton" onclick="	if(Game.Money >= 20){
-	Game.StonePaths += 1;
-	Game.Money -= 20;}">Stone Pathway Block - $20</button>
 	
-	<button class="transactionButton" onclick="	if(Game.Money >= 5){
-	Game.Dirt += 1;
-	Game.Money -= 5;}">Dirt Block - $5</button>
-	
-	<button class="transactionButton" onclick="	if(Game.Money >= 9){
-	Game.TilledDirt += 1;
-	Game.Money -= 9;}">Tilled Dirt Block - $9</button>
-	
-	<button class="transactionButton" onclick="	if(Game.Money >= 5){
-	Game.Grass += 1;
-	Game.Money -= 5;}">Grass - $5</button>
-</div>
-	<button class="closeButton" id="closeButton"onclick="storeClose()">Close Store</button>
-</div>
-<div id="input">
-<input class="textBox"name="textbox" type="text" />
+	}"
+        >
+          Carrot Seed - $10
+        </button>
 
-<input class="sendButton"name="buttonExecute" onclick="eval(document.getElementsByName('textbox')[0].value)" type="button" value="Execute"/></div>
+        <button
+          class="transactionButton"
+          onclick="	if(Game.Money >= 20){
+	Game.StonePaths += 1;
+	Game.Money -= 20;}"
+        >
+          Stone Pathway Block - $20
+        </button>
+
+        <button
+          class="transactionButton"
+          onclick="	if(Game.Money >= 30){
+	Game.Dirt += 1;
+	Game.Money -= 30;}"
+        >
+          Shovel - $30
+        </button>
+
+        <button
+          class="transactionButton"
+          onclick="	if(Game.Money >= 40){
+	Game.TilledDirt += 1;
+	Game.Money -= 40;}"
+        >
+          Hoe - $40
+        </button>
+
+        <button
+          class="transactionButton"
+          onclick="	if(Game.Money >= 50){
+	Game.Grass += 1;
+	Game.Money -= 50;}"
+        >
+          Pickaxe(Use to break misplaced things) - $50
+        </button>
+      </div>
+      <button class="closeButton" id="closeButton" onclick="storeClose()">
+        Close Store
+      </button>
+    </div>
+    <div id="input">
+      <input class="textBox" name="textbox" type="text" />
+
+      <input
+        class="sendButton"
+        name="buttonExecute"
+        onclick="eval(document.getElementsByName('textbox')[0].value)"
+        type="button"
+        value="Execute"
+      />
+    </div>
   </body>
-</html>		
+</html>

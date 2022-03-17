@@ -7,7 +7,6 @@ Game = {
     Grass: 0,
     StonePaths: 0,
     
-    
     Map: new Array(20),
         
     Crops: [],
@@ -18,7 +17,7 @@ Game = {
     for (y=0;y<20;y++){
         tmp = [];
         for (x=0;x<20;x++){
-            tmp.push({"stage": 0, "planted": 0, "type": 0, "col": x, "row": y})
+            tmp.push({"stage": 0, "planted": 0, "type": 0, "col": x, "row": y});
         }
         Game.Crops.push(tmp);
         }
