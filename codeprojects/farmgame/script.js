@@ -14,18 +14,6 @@ var cashMoneys = document.getElementById("cashMoneys");
   //if ls is undefined, just set it to the default game and procede, if not, set Game to the ls value
   if (JSON.parse(localStorage.getItem('Game')) == null) {
     localStorage.setItem("Game", JSON.stringify(Game));
-  Game.Money = 500;
-	Game.Carrots = 0;
-  Game.CarrotSeeds = 0;
-	Game.Dirt = 0;
-	Game.TilledDirt = 0;
-	Game.Grass = 0;
-	Game.StonePaths = 0;
-	Game.Map: new Array(20);
-	Game.Crops: [];
-
-
-		
     tmp1 = new Array(20);
     tmp1.fill(0);
     Game.Map.fill(tmp1);
@@ -36,14 +24,6 @@ var cashMoneys = document.getElementById("cashMoneys");
         }
         Game.Crops.push(tmp);
         }
-
-
-	
-	
-	
-	
-	
-	
 	} else {
     Game = JSON.parse(localStorage.getItem('Game'));		
   }
