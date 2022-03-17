@@ -1,5 +1,5 @@
 Game = {
-    Money: 1000,
+    Money: 500,
     Carrots: 0,
     CarrotSeeds: 0,
     Dirt: 0,
