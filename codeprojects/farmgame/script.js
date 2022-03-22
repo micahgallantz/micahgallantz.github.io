@@ -129,4 +129,6 @@ document.addEventListener("click", changeTile);
   drawHotBar();
 	requestAnimationFrame(loop);
 }
+loadImages(()=>{
 requestAnimationFrame(loop); 
+})
