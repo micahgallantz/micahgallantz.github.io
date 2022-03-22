@@ -1,58 +1,42 @@
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext('2d');
 var w = h = canvas.width = canvas.height = 640;
 
-const grass = new Image();
-grass.src = "http://micahgallantz.com/codeprojects/farmgame/tex/grass.png";
 
-const moneytex = new Image();
-moneytex.src = "http://micahgallantz.com/codeprojects/farmgame/tex/money.png";
+var grass = resource("http://micahgallantz.com/codeprojects/farmgame/tex/grass.png");
 
-const carrotSeedHotbar = new Image();
-carrotSeedHotbar.src = "http://micahgallantz.com/codeprojects/farmgame/tex/carrotSeedHotbar.png";
+var moneytex = resource("http://micahgallantz.com/codeprojects/farmgame/tex/money.png");
 
-const carrotCount = new Image();
-carrotCount.src = "http://micahgallantz.com/codeprojects/farmgame/tex/carrotCount.png";
+var carrotSeedHotbar = resource("http://micahgallantz.com/codeprojects/farmgame/tex/carrotSeedHotbar.png");
 
-const carrotSeed = new Image();
-carrotSeed.src = "http://micahgallantz.com/codeprojects/farmgame/tex/carrotSeed.png";
+var carrotCount = resource("http://micahgallantz.com/codeprojects/farmgame/tex/carrotCount.png");
 
-const stonePath = new Image();
-stonePath.src = "http://micahgallantz.com/codeprojects/farmgame/tex/stonePath.png";
+var carrotSeed = resource("http://micahgallantz.com/codeprojects/farmgame/tex/carrotSeed.png");
 
-const dirt = new Image();
-dirt.src = "http://micahgallantz.com/codeprojects/farmgame/tex/dirt.png";
+var stonePath = resource("http://micahgallantz.com/codeprojects/farmgame/tex/stonePath.png");
 
-const tilledDirt = new Image();
-tilledDirt.src = "http://micahgallantz.com/codeprojects/farmgame/tex/tilledDirt.png";
+var dirt = resource("http://micahgallantz.com/codeprojects/farmgame/tex/dirt.png");
 
-const carrot = new Image();
-carrot.src = "http://micahgallantz.com/codeprojects/farmgame/tex/carrot.png";
+var tilledDirt = resource("http://micahgallantz.com/codeprojects/farmgame/tex/tilledDirt.png");
 
-const carrotStage1 = new Image();
-carrotStage1.src = "http://micahgallantz.com/codeprojects/farmgame/tex/carrotStage1.png";
+var carrot = resource("http://micahgallantz.com/codeprojects/farmgame/tex/carrot.png");
 
-const carrotStage2 = new Image();
-carrotStage2.src = "http://micahgallantz.com/codeprojects/farmgame/tex/carrotStage2.png";
+var carrotStage1 = resource("http://micahgallantz.com/codeprojects/farmgame/tex/carrotStage1.png");
 
-const curser = new Image();
-curser.src = "http://micahgallantz.com/codeprojects/farmgame/tex/curser.png";
+var carrotStage2 = resource("http://micahgallantz.com/codeprojects/farmgame/tex/carrotStage2.png");
 
-const hotbar_tex = new Image();
-hotbar_tex.src = "http://micahgallantz.com/codeprojects/farmgame/tex/hotbar.png";
+var curser = resource("http://micahgallantz.com/codeprojects/farmgame/tex/curser.png");
 
-const hotbarSelected = new Image();
-hotbarSelected.src = "http://micahgallantz.com/codeprojects/farmgame/tex/hotbarSelected.png";
+var hotbar_tex = resource("http://micahgallantz.com/codeprojects/farmgame/tex/hotbar.png");
 
-const carrotHotbar = new Image();
-carrotHotbar.src = "http://micahgallantz.com/codeprojects/farmgame/tex/carrotHotbar.png";
+var hotbarSelected = resource("http://micahgallantz.com/codeprojects/farmgame/tex/hotbarSelected.png");
 
-const stonePathHotbar = new Image();
-stonePathHotbar.src = "http://micahgallantz.com/codeprojects/farmgame/tex/storePathHotbar.png";
+var carrotHotbar = resource("http://micahgallantz.com/codeprojects/farmgame/tex/carrotHotbar.png");
 
-const dirtHotbar = new Image();
-dirtHotbar.src = "http://micahgallantz.com/codeprojects/farmgame/tex/dirtHotbar.png";
+var stonePathHotbar = resource("http://micahgallantz.com/codeprojects/farmgame/tex/storePathHotbar.png");
 
-const grassHotbar = new Image();
-grassHotbar.src = "http://micahgallantz.com/codeprojects/farmgame/tex/grassHotbar.png";
+var dirtHotbar = resource("http://micahgallantz.com/codeprojects/farmgame/tex/dirtHotbar.png");
 
-const tilledDirtHotbar = new Image();
-tilledDirtHotbar.src = "http://micahgallantz.com/codeprojects/farmgame/tex/tilledDirtHotbar.png";
+var grassHotbar = resource("http://micahgallantz.com/codeprojects/farmgame/tex/grassHotbar.png");
+
+var tilledDirtHotbar = resource("http://micahgallantz.com/codeprojects/farmgame/tex/tilledDirtHotbar.png");

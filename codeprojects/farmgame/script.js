@@ -1,7 +1,3 @@
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext('2d');
-var w = h = canvas.width = canvas.height = 640;
-
 var tileSize = 32;
 
 window.onunload = () => {
