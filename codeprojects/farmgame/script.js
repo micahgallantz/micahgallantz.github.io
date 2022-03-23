@@ -101,7 +101,6 @@ document.addEventListener("click", changeTile);
 		}
 
 	}
-
 	for(row=0; row<layer2.length; row++){
 		for(col=0; col<layer2[row].length; col++){
 			
@@ -118,7 +117,6 @@ document.addEventListener("click", changeTile);
 
 			}
 		}
-
 	}
 			ctx.drawImage(moneytex, 10, 15);
 			ctx.drawImage(carrotCount, 380, 15);

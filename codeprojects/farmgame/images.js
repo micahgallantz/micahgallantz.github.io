@@ -1,8 +1,3 @@
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext('2d');
-var w = h = canvas.width = canvas.height = 640;
-
-
 var grass = resource("http://micahgallantz.com/codeprojects/farmgame/tex/grass.png");
 
 var moneytex = resource("http://micahgallantz.com/codeprojects/farmgame/tex/money.png");
