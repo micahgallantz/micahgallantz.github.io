@@ -1,3 +1,6 @@
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext('2d');
+var w = h = canvas.width = canvas.height = 640;
 //This code was provided by Ryan Grube, big thx to him
 imagesToLoad = [];
 //pushes an image to a stack to load and returns that image
@@ -7,10 +10,9 @@ function resource(path,nameDuringLoadScreen="images"){
   return tmpObj;
 }
 
-
 function loadingScreen(){
   ctx.fillStyle="black";
-  ctx.fillRect(0,0,width,height)
+  ctx.fillRect(0,0,w,h);
 }
 
 //goes through each image
