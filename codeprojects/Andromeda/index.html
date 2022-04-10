@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Andromeda</title>
+    <link rel="icon" href="file:///home/chronos/u-046aba657d1b33badcddb59957e6ac1788bbaf42/MyFiles/vscode/Andromeda/tex/andromedalogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link href="file:///home/chronos/u-046aba657d1b33badcddb59957e6ac1788bbaf42/MyFiles/vscode/Andromeda/styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="file:///home/chronos/u-046aba657d1b33badcddb59957e6ac1788bbaf42/MyFiles/vscode/Andromeda/styles/menu.css" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body>
+    <!--these are relative to the chromebook for testing purposes, but to port to the website, just change them to be relative to the website-->
+	<div id="game" class="game">
+    <canvas id="canvas"></canvas>
+  </div>
+  <div id="menu" class="menu">
+
+    <h1>Andromeda</h1>
+      <button class="menubutton" onclick='scene=1;loadScene();'>Play</button>
+      <button class="menubutton">Options</button>
+      <button class="menubutton"onclick='scene=2;loadScene();'>Credits</button>
+
+    </div>
+    
+    
+    <div id="options" class="options">
+    
+    </div>
+    <div id="credits" class="credits" display="none">
+    <h2>Credits</h2>
+    <p>Game design, most of the art, programming, sound design - Micah Gallantz</p>
+    <p>Bug fixes - Ryan Grube</p>
+    <p>Menu screen Background - Kyle Nguyen and Louis Scardaville</p>
+    </div>
+    <div class="bg" id="bg"></div>
+
+
+    <script src="file:///home/chronos/u-046aba657d1b33badcddb59957e6ac1788bbaf42/MyFiles/vscode/Andromeda/scripts/images.js.js"></script>
+    <script src="file:///home/chronos/u-046aba657d1b33badcddb59957e6ac1788bbaf42/MyFiles/vscode/Andromeda/scripts/script.js"></script>
+		<script src="file:///home/chronos/u-046aba657d1b33badcddb59957e6ac1788bbaf42/MyFiles/vscode/Andromeda/scripts/scenes.js"></script>
+    <script src="file:///home/chronos/u-046aba657d1b33badcddb59957e6ac1788bbaf42/MyFiles/vscode/Andromeda/scripts/game.js"></script>
+  </body>
+</html>
