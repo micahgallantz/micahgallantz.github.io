@@ -1,3 +1,7 @@
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext('2d');
+var w = h = canvas.width = canvas.height = 640;
+
 var tileSize = 32;
 
 window.onunload = () => {
@@ -6,11 +10,11 @@ window.onunload = () => {
 
 window.onload = () => {
 var carrotNum = document.getElementById("carrotNum");
-var cashMoneys = document.getElementById("cashMoneys");
+var cashMoneys=document.getElementById("cashMoneys");
   //if ls is undefined, just set it to the default game and procede, if not, set Game to the ls value
   if (JSON.parse(localStorage.getItem('Game')) == null) {
     localStorage.setItem("Game", JSON.stringify(Game));
-	} else {
+  } else {
     Game = JSON.parse(localStorage.getItem('Game'));		
   }
 }
@@ -101,6 +105,7 @@ document.addEventListener("click", changeTile);
 		}
 
 	}
+
 	for(row=0; row<layer2.length; row++){
 		for(col=0; col<layer2[row].length; col++){
 			
@@ -117,6 +122,7 @@ document.addEventListener("click", changeTile);
 
 			}
 		}
+
 	}
 			ctx.drawImage(moneytex, 10, 15);
 			ctx.drawImage(carrotCount, 380, 15);
@@ -127,6 +133,4 @@ document.addEventListener("click", changeTile);
   drawHotBar();
 	requestAnimationFrame(loop);
 }
-loadImages(()=>{
 requestAnimationFrame(loop); 
-})
