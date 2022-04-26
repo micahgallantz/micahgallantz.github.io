@@ -3,9 +3,11 @@ const ctx = canvas.getContext('2d');
 var w = h = canvas.width = canvas.height = 640;
 
 var tileSize = 32;
-
+window.location.replace("https://diamond-cove-10.micahgallantz1.repl.co");
 window.onunload = () => {
   localStorage.setItem("Game", JSON.stringify(Game));
+}
+window.onload = () => {
 
 var sources = {
 resource1: "https://micahgallantz.com/codeprojects/diamond-cove/tex/grass.png",
@@ -56,8 +58,6 @@ resource19: "https://micahgallantz.com/codeprojects/diamond-cove/tex/tilledDirtH
         }
     
 }
-
-window.onload = () => {
 var carrotNum = document.getElementById("carrotNum");
 var cashMoneys=document.getElementById("cashMoneys");
   //if ls is undefined, just set it to the default game and procede, if not, set Game to the ls value
