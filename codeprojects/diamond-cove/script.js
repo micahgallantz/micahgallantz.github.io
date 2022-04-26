@@ -25,7 +25,7 @@ var mouseDown = false;
 var changeTo = 2;
 
 function loop(){
-	cashMoneys.innerHTML = Game.Money;
+cashMoneys.innerHTML = Game.Money;
 carrotNum.innerHTML = Game.Carrots;
 	ctx.clearRect(0, 0, w, h);
 
