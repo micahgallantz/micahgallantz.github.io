@@ -6,6 +6,55 @@ var tileSize = 32;
 
 window.onunload = () => {
   localStorage.setItem("Game", JSON.stringify(Game));
+
+var sources = {
+resource1: "https://micahgallantz.com/codeprojects/diamond-cove/tex/grass.png",
+
+resource2: "https://micahgallantz.com/codeprojects/diamond-cove/tex/money.png",
+
+resource3: "https://micahgallantz.com/codeprojects/diamond-cove/tex/carrotSeedHotbar.png",
+
+resource4: "https://micahgallantz.com/codeprojects/diamond-cove/tex/carrotCount.png",
+
+resource5: "https://micahgallantz.com/codeprojects/diamond-cove/tex/carrotSeed.png",
+
+resource6: "https://micahgallantz.com/codeprojects/diamond-cove/tex/stonePath.png",
+
+resource7: "https://micahgallantz.com/codeprojects/diamond-cove/tex/dirt.png",
+resource8: "https://micahgallantz.com/codeprojects/diamond-cove/tex/tilledDirt.png",
+resource9: "https://micahgallantz.com/codeprojects/diamond-cove/tex/carrot.png",
+resource10: "https://micahgallantz.com/codeprojects/diamond-cove/tex/carrotStage1.png",
+resource11: "https://micahgallantz.com/codeprojects/diamond-cove/tex/carrotStage2.png",
+resource12: "https://micahgallantz.com/codeprojects/diamond-cove/tex/curser.png",
+resource13: "https://micahgallantz.com/codeprojects/diamond-cove/tex/hotbar.png",
+resource14: "https://micahgallantz.com/codeprojects/diamond-cove/tex/hotbarSelected.png",
+resource15: "https://micahgallantz.com/codeprojects/diamond-cove/tex/carrotHotbar.png",
+resource16: "https://micahgallantz.com/codeprojects/diamond-cove/tex/storePathHotbar.png",
+resource17: "https://micahgallantz.com/codeprojects/diamond-cove/tex/dirtHotbar.png",
+resource18: "https://micahgallantz.com/codeprojects/diamond-cove/tex/grassHotbar.png", 
+resource19: "https://micahgallantz.com/codeprojects/diamond-cove/tex/tilledDirtHotbar.png"
+					
+        };
+        loadImages(sources, initGame);  // calls initGame after *all* images have finished loading
+    };
+
+    function loadImages(sources, callback) {
+        var images = {};
+        var loadedImages = 0;
+        var numImages = 0;
+        for (var src in sources) {
+            numImages++;
+        }
+        for (var src in sources) {
+            images[src] = new Image();
+            images[src].onload = function(){
+                if (++loadedImages >= numImages) {
+                    callback(images);
+                }
+            };
+            images[src].src = sources[src];
+        }
+    
 }
 
 window.onload = () => {
@@ -133,4 +182,6 @@ document.addEventListener("click", changeTile);
   drawHotBar();
 	requestAnimationFrame(loop);
 }
-requestAnimationFrame(loop); 
+    function initGame(images) {
+			requestAnimationFrame(loop); 
+    }
