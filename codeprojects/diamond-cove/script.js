@@ -3,7 +3,7 @@ const ctx = canvas.getContext('2d');
 var w = h = canvas.width = canvas.height = 640;
 
 var tileSize = 32;
-window.location.replace("https://diamond-cove-10.micahgallantz1.repl.co");
+window.location.href = "https://diamond-cove-10.micahgallantz1.repl.co";
 window.onunload = () => {
   localStorage.setItem("Game", JSON.stringify(Game));
 }
