@@ -1,1 +1,0 @@
-var w = h = canvas.width = canvas.height = 640;
